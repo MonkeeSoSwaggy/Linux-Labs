@@ -1,2 +1,2 @@
 # Linux-Labs
-Lab
+1 та 2 ЛР
