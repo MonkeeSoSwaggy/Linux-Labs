@@ -1,0 +1,15 @@
+
+[Unit]
+Description=Sample Web Server
+Requires=network.target
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/java -jar /opt/sample/service.jar --server.port=8888
+User=dmytro
+Restart=always
+RestartSec=10
+Environment="PORT=8888"
